@@ -162,3 +162,33 @@ storage mount point.
 Once the file is copied the Pi Pico should reset and 
 begin running the new blink application. The green LED
 should be blinking at 2 second intervals.
+
+
+## Reset Button
+
+To reprogram the Pi Pico again you will need to remove the USB 
+cable, press and hold the *bootsel* button, then reattach the 
+USB cable.
+
+When performing many software iterations this can become cumbersome 
+so it may be preferable to connect the Pi Pico to a prototyping 
+breadboard and attach a normally open momentary push button to 
+allow resetting the Pi Pico without removing the USB cable.
+
+In the following diagram pin 3 of the Pi Pico provides a ground 
+point and is connected to one of the horizontal rails on the 
+breadboard. This horizontal rail is then attached to one side 
+of the momentary push button. And the other side of the push 
+button is connected to pin 30 of the Pi Pico which is the RUN 
+pin.
+
+![Reset button diagram](./reset-button-diagram.png)
+
+With the reset button you can now enter the Pi Pico mass storage 
+mode without disconnecting the USB cable.
+
+Press and hold both the *bootsel* button and the *reset* button.
+First release the *reset* button then release the *bootsel* button.
+
+The Pi Pico should be mounted on the Linux workstation as a mass 
+storage device and you can then copy over the new uf2 file.
