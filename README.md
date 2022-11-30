@@ -15,6 +15,12 @@ Controller in the C language from Linux workstation.
 - Momentary push button switch (normally open).
 - Hookup wire.
 
+## Reference Links
+
+- Fedora Linux: [https://getfedora.org/](https://getfedora.org/)
+- Raspberry Pi Pico: [https://www.raspberrypi.com/products/raspberry-pi-pico/](https://www.raspberrypi.com/products/raspberry-pi-pico/)
+- Pi Pico SDK: [https://github.com/raspberrypi/pico-sdk](https://github.com/raspberrypi/pico-sdk)
+
 
 ## Workstation Setup
 
