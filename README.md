@@ -69,6 +69,10 @@ The Pi Pico board includes an integrated LED that is tied
 to GPIO 25 on the board. We will use this LED in a new blink 
 project.
 
+[Pi Pico pinout](https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf)
+
+![Pi Pico pinout](./pinout.png)
+
 
 ### Project Directory
 
