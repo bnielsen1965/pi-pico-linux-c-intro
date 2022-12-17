@@ -38,7 +38,9 @@ and link binaries for the ARM processor on the Pi Pico.
 (Fedora 37 install commands)
 
 > sudo dnf install arm-none-eabi-gcc-cs
+
 > sudo dnf install arm-none-eabi-gcc-cs-c++
+
 > sudo dnf install arm-none-eabi-newlib
 
 
@@ -53,13 +55,16 @@ repository.
 (Clone pico-sdk project and update submodules)
 
 > git clone https://github.com/raspberrypi/pico-sdk
+
 > cd pico-sdk
+
 > git submodule update --init
 
 Return to the project root directory and export the path 
 environment variable for the pico-sdk.
 
 > cd ..
+
 > export PICO_SDK_PATH=~/Projects/pico-sdk/
 
 
@@ -79,6 +84,7 @@ project.
 Create the directory for the blink project and enter directory.
 
 > mkdir blink
+
 > cd blink
 
 
@@ -141,8 +147,11 @@ int main() {
 Create the build directory and build the project.
 
 > mkdir build
+
 > cd build
+
 > cmake ..
+
 > make
 
 At this point the build directory should contain all 
@@ -162,6 +171,7 @@ mass storage device on your workstation.
 (example listing of mounted Pi Pico)
 
 > ls /run/media/burnin/RPI-RP2/
+
 > INDEX.HTM  INFO_UF2.TXT
 
 Copy the blink.uf2 file to the Pi Pico USB mass 
